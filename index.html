@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografa texto</title>
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Allerta+Stencil&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagens/loga_alura.png" alt="imagem alura">
+        </div>
+    </header>
+
+    
+    <main>
+        <section class="txt_digitado">
+            <div>
+                <textarea  id="texto" cols="30" rows="5" onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"class="user_digitado" placeholder="Digite seu texto" required></textarea>
+                <button onclick="verifica_texto(1), verifica_conteudo('conteudo_correto','conteudo_errado')" class="btn_criptografar">Criptografar</button>
+                <button onclick="verifica_texto(2), verifica_conteudo('conteudo_correto','conteudo_errado')" class="btn_descriptografar">Descriptografar</button>
+                <img class="icone-exclamacao" src="imagens/ponto-de-exclamacao.png" alt="icone ponto de exclamação">
+                <p class="mensagem">Apenas letras minúsculas sem acento e sem caracteres espéciais.</p>
+            </div>
+        </section>
+
+        <section class="res_principal">
+            <div class="teste" id="conteudo_correto">
+                <textarea name="campo_resposta" class="txt_resposta"  id="res_text" cols="30" rows="10" readonly></textarea>
+                <button onclick="btn_copiar()" class="btn_copiar">Copiar</button>  
+            </div>
+
+            
+            <div class="teste" id="conteudo_errado">
+                <img src="imagens/img_nenhuma_mensagem.png" alt="imagem informa que nenhuma mensagem foi encontrada." class="img_nenhuma_mensagem">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p class="aviso_digitar">digite um texto que você deseja criptografar ou descriptografar. <Strong>OBS:Apenas letras minúsculas sem acento e sem caracteres espéciais.</Strong></p>
+                
+            </div>
+            
+        </section>
+        
+    </main>
+
+    
+    <footer>
+            <a href="https://github.com/Geana-Almeida" target="_blank" rel="next">
+                <img src="imagens/github.svg" alt="Icone GitHub" class="img-footer"><p>GitHub</p>
+            </a>
+            <a href="https://www.linkedin.com/in/geana-mossal-nunes-de-almeida-9385241a2/" target="_blank" rel="next">
+                <img src="imagens/linkedin.svg" alt="Icone linkedin" class="img-footer"><p>Linkdin</p>
+            </a>
+    </footer>
+    
+</body>
+</html>

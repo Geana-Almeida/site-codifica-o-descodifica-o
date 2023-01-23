@@ -1,0 +1,446 @@
+body{
+    background: #F3F5FC;
+}
+
+header{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 5.67%;
+    right: 37.43%;
+    top: 2%;
+    bottom: 0%;
+}
+
+.txt_digitado{
+    position: relative;
+    left: 10%;
+    right: 10%;
+    top: 70px;
+    width: 750px;
+    height:500px;
+    padding: 10px;
+    
+    
+}
+
+.user_digitado{
+    position: absolute;
+    resize:none;
+    overflow:auto;
+    width: 680px;
+    height: 48px;
+    left: 5%;
+    top: 10%;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    max-height: 60%;
+    max-width: 85%;
+ 
+}
+
+.user_digitado::placeholder{
+    color: #0A3871;
+}
+
+.icone-exclamacao{
+    position: absolute;
+    width: 15px;
+    top: 428px;
+    left: 58px;
+}
+
+.mensagem{
+    position: absolute;
+    top: 428px;
+    left: 75px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.btn_criptografar{
+    position: absolute;
+    top: 450px;
+    left: 8%;
+    width: 300px;
+    height: 60px;
+
+    background-color: #0A3871;
+    border-radius: 24px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+
+    
+}
+
+.btn_criptografar:hover{
+    font-size: 30;
+    font-weight: bolder;
+    background-color: #001938;
+}
+
+.btn_descriptografar{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    width: 300px;
+    height: 60px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #0A3871;
+}
+
+.btn_descriptografar:hover{
+    font-size: 30;
+    font-weight: bolder;
+    background: #99c5ff;
+}
+
+
+.teste{
+    outline: 0;
+    position: absolute;
+    width: 20%;
+    height: 82%;
+    left: 70%;
+    top: 50px;
+    
+    
+    border-radius: 24px;
+    background: #FFFFFF;
+    
+}
+
+/*resposavel do design se o usuario digitar algo*/
+.txt_resposta{
+    margin: 5px;
+    width: 80%;
+    height: 75%;
+    padding: 20px;
+    resize:none;
+    overflow:auto;
+    border-radius: 24px;
+    
+    border: none;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    
+    
+}
+
+
+
+.btn_copiar{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 40px;
+    top: 91.5%;
+    
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    
+}
+
+.btn_copiar:hover{
+    font-size: 30;
+    font-weight: bolder;
+    background: #8aafdf;
+}
+
+/*resposavel do design se o usuario não digitar algo*/
+.img_nenhuma_mensagem{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 100px;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #343A40;
+
+    top: 350px;
+}
+
+.aviso_digitar{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+
+    text-align: center;
+
+    top: 410px;
+}
+
+strong{
+    color: #1900fd;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar { /*Esse comando serve para esconder a barra que fica num textarea melhorando mais o visual do site.*/
+    width: 0px;
+}
+
+.img-footer{
+    border-radius: 75%;
+    border: 5px solid #a1a1cc;
+}
+
+.img-footer:hover{
+    background-color: #cbf5f5;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%; /*Arrumar o footer para que fique apenas numa posição.*/
+}
+
+footer a{
+    margin: 8px;
+
+}
+
+footer p{
+    margin-top: 1px;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0A3871;
+}
+
+footer a:hover{
+    color: rgb(68, 226, 226);
+}
+
+@media screen and (max-width: 480px) {
+    .txt_digitado{
+        width: 320px;
+        left: 10px;
+    }
+
+    .user_digitado{
+        position: absolute;
+        resize:none;
+        overflow:auto;
+        width: 250px;
+        height: 40px;
+        left: 7%;
+        top: 10%;
+    
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #0A3871;
+        max-height: 50%;
+        max-width: 85%;
+     
+    }
+
+    .btn_criptografar{
+        position: absolute;
+        top: 480px;
+        left: 0%;
+        width: 180px;
+        height: 40px;
+    
+        background-color: #0A3871;
+        border-radius: 24px;
+        border: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    
+        
+    }
+
+    .btn_descriptografar{
+        position: absolute;
+        top: 480px;
+        left: 55%;
+        width: 175px;
+        height: 40px;
+        background: #D8DFE8;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 19px;
+        color: #0A3871;
+    }
+
+    .icone-exclamacao{
+        position: absolute;
+        width: 15px;
+        top: 410px;
+        left: 1px;
+    }
+
+    .mensagem{
+        position: absolute;
+        top: 400px;
+        left: 18px;
+    
+        font-family: 'Inter';
+        font-weight: 450px;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: bold;
+    }
+
+    .teste{
+        outline: 0;
+        position: absolute;
+        width: 85%;
+        height: 82%;
+        top: 600px;
+        left: 18px;
+        
+        
+        border-radius: 24px;
+        background: #FFFFFF;
+        
+    }
+
+    .txt_resposta{
+    margin: 5px;
+    width: 80%;
+    height: 75%;
+    padding: 20px;
+    resize:none;
+    overflow:auto;
+    border-radius: 24px;
+    
+    border: none;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    
+    
+    }
+
+    .btn_copiar{
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        left: 65px;
+        top: 91.5%;
+        
+    
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+    
+        
+    }
+
+    /*resposavel do design se o usuario não digitar algo*/
+.img_nenhuma_mensagem{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    top: 50px;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #343A40;
+
+    top: 400px;
+}
+
+.aviso_digitar{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+
+    text-align: center;
+
+    top: 470px;
+}
+
+
+footer{
+        height: 20px;
+        position: relative;
+        top: 750px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%; /*Arrumar o footer para que fique apenas numa posição.*/
+    }
+}
