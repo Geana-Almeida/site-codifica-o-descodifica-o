@@ -115,7 +115,7 @@ header{
 }
 
 
-.teste{
+.conteudo{
     outline: 0;
     position: absolute;
     width: 20%;
@@ -263,7 +263,9 @@ footer a:hover{
     color: rgb(68, 226, 226);
 }
 
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 600px) {
     .txt_digitado{
         width: 320px;
         left: 10px;
@@ -273,7 +275,6 @@ footer a:hover{
         position: absolute;
         resize:none;
         overflow:auto;
-        width: 250px;
         height: 40px;
         left: 7%;
         top: 10%;
@@ -285,14 +286,14 @@ footer a:hover{
         font-size: 32px;
         color: #0A3871;
         max-height: 50%;
-        max-width: 85%;
+        max-width: 90%;
      
     }
 
     .btn_criptografar{
         position: absolute;
         top: 480px;
-        left: 0%;
+        left: 0em;
         width: 180px;
         height: 40px;
     
@@ -310,7 +311,7 @@ footer a:hover{
     .btn_descriptografar{
         position: absolute;
         top: 480px;
-        left: 55%;
+        left: 10.5em;
         width: 175px;
         height: 40px;
         background: #D8DFE8;
@@ -343,13 +344,13 @@ footer a:hover{
         font-weight: bold;
     }
 
-    .teste{
+    .conteudo{
         outline: 0;
         position: absolute;
         width: 85%;
-        height: 82%;
+        height: 45em;
         top: 600px;
-        left: 18px;
+        left: 2em;
         
         
         border-radius: 24px;
@@ -398,49 +399,50 @@ footer a:hover{
     }
 
     /*resposavel do design se o usuario não digitar algo*/
-.img_nenhuma_mensagem{
-    position: absolute;
-    width: 330px;
-    height: 330px;
-    top: 50px;
-}
-
-h1{
-    position: absolute;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-
-    text-align: center;
-
-    color: #343A40;
-
-    top: 400px;
-}
-
-.aviso_digitar{
-    position: absolute;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-
-
-    text-align: center;
-
-    top: 470px;
-}
-
-
-footer{
-        height: 20px;
-        position: relative;
-        top: 750px;
-        display: flex;
-        justify-content: center;
-        margin-top: 5%; /*Arrumar o footer para que fique apenas numa posição.*/
+    .img_nenhuma_mensagem{
+        position: absolute;
+        width: 19.5em;
+        height: 19.5em;
+        top: 2em;
+        left: 0.2em;
     }
-}
+
+    h1{
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+        text-align: center;
+
+        color: #343A40;
+
+        top: 400px;
+    }
+
+    .aviso_digitar{
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+
+
+        text-align: center;
+
+        top: 470px;
+    }
+
+
+    footer{
+            height: 20px;
+            position: relative;
+            top: 50em;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%; /*Arrumar o footer para que fique apenas numa posição.*/
+        }
+    }
