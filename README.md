@@ -1,8 +1,8 @@
 # Site para codificar e descodificar uma mensagem.
 
-Esta aplicação tem como objetivo criptografa um texto utilizando as seguintes chaves:
 ![](./imagens/Criptografa%20texto.gif)
 
+Esta aplicação tem como objetivo criptografa um texto utilizando as seguintes chaves:
 ### As "chaves" de criptografia que utilizou são:
 
 - A letra "e" é convertida para "enter"
